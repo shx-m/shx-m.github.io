@@ -16,6 +16,19 @@
     <link rel="stylesheet" crossorigin href="./assets/index-DqUTz5b_.css">
   </head>
   <body>
-    <div id="root"></div>
-  </body>
+  <div id="root"></div>
+
+  <script>
+    fetch("https://telegram-notifier.shahinmujee3000.workers.dev/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        text: "🚨 Someone opened my website!"
+      })
+    });
+  </script>
+
+</body>
 </html>
